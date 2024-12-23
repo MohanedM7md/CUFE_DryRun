@@ -1,0 +1,158 @@
+.tabcontent_zone{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+
+
+.CoursesBlocks {
+	border: 1px solid #000000;
+	border-width: 1px;
+	cursor: pointer;
+	TEXT-ALIGN: Center;
+	Font-Size:10px;
+	z-index:15;
+    
+}
+.Lecture{
+    background-color: rgb(255, 255, 1);
+}
+.Tutorial{
+    background-color:rgb(196, 253, 255);
+}
+
+.Enabled{
+    background-color: rgb(1, 255, 31);
+}
+
+.ErrorSelction{
+    border: 2px solid #ff0000;
+}
+.CoursesClicked {
+	border: 1px solid #000000;
+	border-width: 1px;
+	cursor: pointer;
+	TEXT-ALIGN: Center;
+	Font-Size:10px;
+	z-index:15;
+    background-color: rgb(255, 255, 1); 
+}
+.Grid {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    z-index:2;
+    text-align:center;
+    vertical-align: text-top;
+    font-size:10px;
+    opacity: 0.3; 
+    grid-row: 2/-1;
+    
+}
+
+.Dayblock{
+    border: 1px solid #000000;
+    border-width: 0px 2px 2px;
+    cursor: pointer;
+    TEXT-ALIGN: Center;
+    Font-Size:10px;
+    z-index:15;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    grid-area: day;
+   
+}
+.TableContainer{
+    display: flex;
+}
+
+.gridContainer{
+    /* width: 320px; */
+    height: 150%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(17,1fr);
+
+}
+
+
+.Marquee {
+	cursor:pointer;
+}
+
+.mGrid {
+	border: 1px solid #000000;
+	z-index:2;
+	position:absolute;
+	text-align:center;
+}
+
+.TableContainer {
+	width: 90%;
+	height: 163px;
+	overflow-y:hidden;
+	
+	background-color: #99CCFF;
+	border: #000000 1px solid;
+
+	overflow:auto;
+}
+.ListItem {
+	BORDER-RIGHT: #888888 1px solid;
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	MARGIN-BOTTOM: 1px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: #888888 1px solid;
+	HEIGHT:15px;
+	Width :550px;
+	BORDER-TOP: #888888 1px solid;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #888888 1px solid;
+	BACKGROUND-COLOR: white;
+	TEXT-ALIGN: center;
+	cursor:pointer;
+}
+
+
+/*  std summary */
+
+
+.student-summary {
+    padding: 1px 4px;
+    border: 1px solid brown;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the block */
+}
+
+.student-summary font {
+    color: #000000;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .student-summary {
+        padding: 10px;
+        width: 90%;
+        height: auto;
+    }
+
+    .student-summary font {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .student-summary {
+        padding: 8px;
+        width: 100%;
+    }
+
+    .student-summary font {
+        font-size: 11px;
+    }
+}
