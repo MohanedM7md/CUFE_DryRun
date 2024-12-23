@@ -46,6 +46,7 @@ fetch('js/scheduale.json')
             newCourse.className = `CoursesBlocks ${element.type} ${element.course_code}`;
             newCourse.title = `${element.name} - Group ${element.g_number} (${element.course_code})\n${element.type}\n${element.location}`;
             newCourse.innerText = element.course_code;
+            newCourse.setAttribute('data-Credits', element.credits);
             let i = 4;
             
             while(isGridCellOccupied(i, colRange,`.${key}grid`)){

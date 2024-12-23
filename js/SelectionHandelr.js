@@ -1,3 +1,4 @@
+
 window.addEventListener("CoursesAdded", (event) => {
     
     if(event.detail)
@@ -10,13 +11,14 @@ function SelctionColorHandling(){
     let color = true;
     coursesBlocks.forEach(Element =>{
     Element.addEventListener('click',event => {
-        console.log('clicked')
+        
         const OldEnabledBlocks = document.querySelectorAll('.Enabled');
         const tragetedBlock = event.target;
         tragetedBlock.classList.toggle ("Enabled");
-        const NewEnabledBlocks = document.querySelectorAll('.Enabled');
+        
         LecturTutorialHandleing();
-        RemoveMultiSameSelction(OldEnabledBlocks,NewEnabledBlocks,tragetedBlock);
+        RemoveMultiSameSelction(OldEnabledBlocks,tragetedBlock);
+        creditsCalaculator(document.querySelectorAll('.Enabled.Lecture'));
         })
     })
 }
@@ -70,7 +72,7 @@ function EveryLecHasTut(EnabledcoursesBlocks){
 }
 
 
-function RemoveMultiSameSelction(oldEnable, newEnable, recentEnabledItem){
+function RemoveMultiSameSelction(oldEnable, recentEnabledItem){
     if(!recentEnabledItem)
         return;
 
@@ -100,12 +102,21 @@ function getBlockType(element) {
         return element.classList[1]; // Return the second (middle) class
 }
 
-
+function creditsCalaculator(SelectedElements){
+    if(SelectedElements.length>0)
+    {    
+        
+        const numberOfcredits = Array.from(SelectedElements).reduce((accumulator, current)=> accumulator + Number(current.dataset.credits),0)
+        
+        
+        document.getElementById("CreditsNum").innerText= numberOfcredits;
+    }
+    else
+        document.getElementById("CreditsNum").innerText=0;
+}
 
 function HandleSelction() {
     SelctionColorHandling();
-    
-    
     
 }
 
