@@ -24,14 +24,14 @@
                 "day": "Sunday"
             },
             {
-                "course_code": "MTHS114",
-                "name": "Numerical Analysis",
+                "course_code": "EECS100",
+                "name": "Laboratory",
                 "type": "Lecture",
-                "location": "[20504]20504-60-الجيزة الرئيسي",
-                "credits": "3",
+                "location": "[20105]20105-45-الجيزة الرئيسي",
+                "credits": "2",
                 "start_time": "11:00:00",
                 "end_time": "12:50:00",
-                "g_nom": "3",
+                "g_nom": "2",
                 "day": "Sunday"
             },
             {
@@ -46,14 +46,14 @@
                 "day": "Sunday"
             },
             {
-                "course_code": "EECS100",
-                "name": "Laboratory",
+                "course_code": "MTHS114",
+                "name": "Numerical Analysis",
                 "type": "Lecture",
-                "location": "[20105]20105-45-الجيزة الرئيسي",
-                "credits": "2",
+                "location": "[20504]20504-60-الجيزة الرئيسي",
+                "credits": "3",
                 "start_time": "11:00:00",
                 "end_time": "12:50:00",
-                "g_nom": "2",
+                "g_nom": "3",
                 "day": "Sunday"
             },
             {
@@ -79,17 +79,6 @@
                 "day": "Sunday"
             },
             {
-                "course_code": "CMPS302",
-                "name": "Algorithms Design and Analysis",
-                "type": "Tutorial",
-                "location": "[3708]3708-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "16:00:00",
-                "end_time": "18:50:00",
-                "g_nom": "3",
-                "day": "Sunday"
-            },
-            {
                 "course_code": "CMPS203",
                 "name": "Software Engineering",
                 "type": "Tutorial",
@@ -98,6 +87,17 @@
                 "start_time": "16:00:00",
                 "end_time": "18:50:00",
                 "g_nom": "2",
+                "day": "Sunday"
+            },
+            {
+                "course_code": "CMPS302",
+                "name": "Algorithms Design and Analysis",
+                "type": "Tutorial",
+                "location": "[3708]3708-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "16:00:00",
+                "end_time": "18:50:00",
+                "g_nom": "3",
                 "day": "Sunday"
             }
         ],
@@ -130,25 +130,14 @@
                 "day": "Monday"
             },
             {
-                "course_code": "CMPS201",
-                "name": "Microprocessor Systems",
+                "course_code": "CMPS211",
+                "name": "Advanced Programming Techniques",
                 "type": "Lecture",
-                "location": "[18103]18103-30-الجيزة الرئيسي",
+                "location": "[18302]18302-60-الجيزة الرئيسي",
                 "credits": "1",
                 "start_time": "11:00:00",
                 "end_time": "12:50:00",
-                "g_nom": "580",
-                "day": "Monday"
-            },
-            {
-                "course_code": "EECS304",
-                "name": "Control-1",
-                "type": "Lecture",
-                "location": "[20105]20105-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "11:00:00",
-                "end_time": "12:50:00",
-                "g_nom": "3",
+                "g_nom": "589",
                 "day": "Monday"
             },
             {
@@ -163,14 +152,36 @@
                 "day": "Monday"
             },
             {
-                "course_code": "CMPS211",
-                "name": "Advanced Programming Techniques",
+                "course_code": "EECS304",
+                "name": "Control-1",
                 "type": "Lecture",
-                "location": "[18302]18302-60-الجيزة الرئيسي",
+                "location": "[20105]20105-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
+                "g_nom": "3",
+                "day": "Monday"
+            },
+            {
+                "course_code": "CMPS303",
+                "name": "Operating Systems",
+                "type": "Lecture",
+                "location": "[18201]18201-45-الجيزة الرئيسي",
                 "credits": "1",
                 "start_time": "11:00:00",
                 "end_time": "12:50:00",
-                "g_nom": "589",
+                "g_nom": "618",
+                "day": "Monday"
+            },
+            {
+                "course_code": "CMPS201",
+                "name": "Microprocessor Systems",
+                "type": "Lecture",
+                "location": "[18103]18103-30-الجيزة الرئيسي",
+                "credits": "1",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
+                "g_nom": "580",
                 "day": "Monday"
             },
             {
@@ -182,6 +193,17 @@
                 "start_time": "13:00:00",
                 "end_time": "15:50:00",
                 "g_nom": "2",
+                "day": "Monday"
+            },
+            {
+                "course_code": "CMPS211",
+                "name": "Advanced Programming Techniques",
+                "type": "Lecture",
+                "location": "[18302]18302-60-الجيزة الرئيسي",
+                "credits": "2",
+                "start_time": "14:00:00",
+                "end_time": "15:50:00",
+                "g_nom": "590",
                 "day": "Monday"
             },
             {
@@ -198,17 +220,6 @@
             {
                 "course_code": "CMPS211",
                 "name": "Advanced Programming Techniques",
-                "type": "Lecture",
-                "location": "[18302]18302-60-الجيزة الرئيسي",
-                "credits": "2",
-                "start_time": "14:00:00",
-                "end_time": "15:50:00",
-                "g_nom": "590",
-                "day": "Monday"
-            },
-            {
-                "course_code": "CMPS211",
-                "name": "Advanced Programming Techniques",
                 "type": "Tutorial",
                 "location": "[3706]3706-45-الجيزة الرئيسي",
                 "credits": "6",
@@ -218,14 +229,14 @@
                 "day": "Monday"
             },
             {
-                "course_code": "EECS306",
-                "name": "Communications-1: Analogue Communications",
-                "type": "Tutorial",
-                "location": "[20511]20511-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "16:00:00",
-                "end_time": "17:50:00",
-                "g_nom": "430",
+                "course_code": "CMPS303",
+                "name": "Operating Systems",
+                "type": "Lecture",
+                "location": "[18301]18301-45-الجيزة الرئيسي",
+                "credits": "2",
+                "start_time": "14:00:00",
+                "end_time": "15:50:00",
+                "g_nom": "620",
                 "day": "Monday"
             },
             {
@@ -237,6 +248,17 @@
                 "start_time": "16:00:00",
                 "end_time": "17:50:00",
                 "g_nom": "600",
+                "day": "Monday"
+            },
+            {
+                "course_code": "EECS306",
+                "name": "Communications-1: Analogue Communications",
+                "type": "Tutorial",
+                "location": "[20511]20511-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "16:00:00",
+                "end_time": "17:50:00",
+                "g_nom": "430",
                 "day": "Monday"
             }
         ],
@@ -364,17 +386,6 @@
                 "day": "Wednesday"
             },
             {
-                "course_code": "CMPS201",
-                "name": "Microprocessor Systems",
-                "type": "Lecture",
-                "location": "[18203]18203-30-الجيزة الرئيسي",
-                "credits": "2",
-                "start_time": "11:00:00",
-                "end_time": "12:50:00",
-                "g_nom": "581",
-                "day": "Wednesday"
-            },
-            {
                 "course_code": "CMPS203",
                 "name": "Software Engineering",
                 "type": "Lecture",
@@ -408,14 +419,14 @@
                 "day": "Wednesday"
             },
             {
-                "course_code": "EECS304",
-                "name": "Control-1",
-                "type": "Tutorial",
-                "location": "[20505]20505-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "13:00:00",
-                "end_time": "15:50:00",
-                "g_nom": "2",
+                "course_code": "CMPS201",
+                "name": "Microprocessor Systems",
+                "type": "Lecture",
+                "location": "[18203]18203-30-الجيزة الرئيسي",
+                "credits": "2",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
+                "g_nom": "581",
                 "day": "Wednesday"
             },
             {
@@ -438,6 +449,17 @@
                 "start_time": "13:00:00",
                 "end_time": "15:50:00",
                 "g_nom": "427",
+                "day": "Wednesday"
+            },
+            {
+                "course_code": "EECS304",
+                "name": "Control-1",
+                "type": "Tutorial",
+                "location": "[20505]20505-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "13:00:00",
+                "end_time": "15:50:00",
+                "g_nom": "2",
                 "day": "Wednesday"
             },
             {
@@ -474,17 +496,6 @@
                 "day": "Wednesday"
             },
             {
-                "course_code": "EECS304",
-                "name": "Control-1",
-                "type": "Tutorial",
-                "location": "[20505]20505-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "16:00:00",
-                "end_time": "18:50:00",
-                "g_nom": "3",
-                "day": "Wednesday"
-            },
-            {
                 "course_code": "CMPS201",
                 "name": "Microprocessor Systems",
                 "type": "Tutorial",
@@ -493,6 +504,17 @@
                 "start_time": "16:00:00",
                 "end_time": "18:50:00",
                 "g_nom": "584",
+                "day": "Wednesday"
+            },
+            {
+                "course_code": "EECS304",
+                "name": "Control-1",
+                "type": "Tutorial",
+                "location": "[20505]20505-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "16:00:00",
+                "end_time": "18:50:00",
+                "g_nom": "3",
                 "day": "Wednesday"
             },
             {
@@ -525,14 +547,14 @@
                 "day": "Thursday"
             },
             {
-                "course_code": "MTHS114",
-                "name": "Numerical Analysis",
+                "course_code": "CMPS303",
+                "name": "Operating Systems",
                 "type": "Tutorial",
-                "location": "[20510]20510-60-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "09:00:00",
+                "location": "[3708]3708-45-الجيزة الرئيسي",
+                "credits": "1",
+                "start_time": "08:00:00",
                 "end_time": "10:50:00",
-                "g_nom": "2",
+                "g_nom": "622",
                 "day": "Thursday"
             },
             {
@@ -550,21 +572,10 @@
                 "course_code": "MTHS114",
                 "name": "Numerical Analysis",
                 "type": "Tutorial",
-                "location": "[20504]20504-60-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "11:00:00",
-                "end_time": "12:50:00",
-                "g_nom": "1",
-                "day": "Thursday"
-            },
-            {
-                "course_code": "MTHS114",
-                "name": "Numerical Analysis",
-                "type": "Lecture",
                 "location": "[20510]20510-60-الجيزة الرئيسي",
                 "credits": "3",
-                "start_time": "11:00:00",
-                "end_time": "12:50:00",
+                "start_time": "09:00:00",
+                "end_time": "10:50:00",
                 "g_nom": "2",
                 "day": "Thursday"
             },
@@ -578,10 +589,54 @@
                 "end_time": "12:50:00",
                 "g_nom": "2",
                 "day": "Thursday"
+            },
+            {
+                "course_code": "MTHS114",
+                "name": "Numerical Analysis",
+                "type": "Lecture",
+                "location": "[20510]20510-60-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
+                "g_nom": "2",
+                "day": "Thursday"
+            },
+            {
+                "course_code": "MTHS114",
+                "name": "Numerical Analysis",
+                "type": "Tutorial",
+                "location": "[20504]20504-60-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
+                "g_nom": "1",
+                "day": "Thursday"
+            },
+            {
+                "course_code": "CMPS303",
+                "name": "Operating Systems",
+                "type": "Tutorial",
+                "location": "[3708]3708-45-الجيزة الرئيسي",
+                "credits": "2",
+                "start_time": "13:00:00",
+                "end_time": "15:50:00",
+                "g_nom": "624",
+                "day": "Thursday"
+            },
+            {
+                "course_code": "CMPS303",
+                "name": "Operating Systems",
+                "type": "Tutorial",
+                "location": "[3708]3708-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "16:00:00",
+                "end_time": "18:50:00",
+                "g_nom": "625",
+                "day": "Thursday"
             }
         ],
         "endtime": [
-            5
+            11
         ]
     }
 }

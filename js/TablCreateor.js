@@ -25,7 +25,7 @@ function updateGridContainer(columns,gridCont) {
 //debugger
 
 
-fetch('js/scheduale.json')
+fetch('js/schedual.json')
 .then(Response => Response.json())
 .then(value=>{
     
