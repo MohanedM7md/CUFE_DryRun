@@ -11,18 +11,23 @@ function SelctionColorHandling(){
     coursesBlocks.forEach(Element =>{
     Element.addEventListener('click',event => {
         console.log('clicked')
-        event.target.classList.toggle ("Enabled");
+        const OldEnabledBlocks = document.querySelectorAll('.Enabled');
+        const tragetedBlock = event.target;
+        tragetedBlock.classList.toggle ("Enabled");
+        const NewEnabledBlocks = document.querySelectorAll('.Enabled');
         LecturTutorialHandleing();
+        RemoveMultiSameSelction(OldEnabledBlocks,NewEnabledBlocks,tragetedBlock);
         })
     })
 }
 
 
 function LecturTutorialHandleing(){
-    console.log('entered')
+    
     const EnabledcoursesBlocks = document.querySelectorAll('.Enabled');
     const coursesBlocks = document.querySelectorAll('.CoursesBlocks');
     EveryLecHasTut(EnabledcoursesBlocks);
+    
 }
 
 
@@ -38,7 +43,7 @@ function EveryLecHasTut(EnabledcoursesBlocks){
     EnabledcoursesBlocks.forEach(Element =>{
         if(Element.classList.contains("Lecture")){
             const TutOfThisLec = document.querySelectorAll(`.Tutorial.${Element.id}`);
-            console.warn(Array.from(TutOfThisLec))
+            
             const EnabledTuts = Array.from(TutOfThisLec).filter(e =>e.classList.contains("Enabled") );
             
 
@@ -51,7 +56,7 @@ function EveryLecHasTut(EnabledcoursesBlocks){
             }
         }else{
             const LecOfThisLec = document.querySelectorAll(`.Lecture.${Element.id}`);
-            console.warn(Array.from(LecOfThisLec))
+            
             const EnabledLecs = Array.from(LecOfThisLec).filter(e =>e.classList.contains("Enabled") );
             
             if (EnabledLecs.length === 0) {
@@ -63,6 +68,38 @@ function EveryLecHasTut(EnabledcoursesBlocks){
 
     })
 }
+
+
+function RemoveMultiSameSelction(oldEnable, newEnable, recentEnabledItem){
+    if(!recentEnabledItem)
+        return;
+
+    const oldSlectedOne = Array.from(oldEnable)
+    .filter(
+        e=>{
+             return e.classList.contains(`${getBlockType(recentEnabledItem)}`)
+                    &&
+                    e.classList.contains(`${recentEnabledItem.id}`)
+                    &&
+                    e.classList.contains('Enabled');
+}   );
+
+    const AllSectionSameType = document.querySelectorAll(`.${getBlockType(recentEnabledItem)}.${recentEnabledItem.id}.Enabled`);
+ 
+    if(AllSectionSameType.length > 1){
+  
+        oldSlectedOne[0].classList.remove('Enabled');
+       
+    }
+   
+}
+
+
+
+function getBlockType(element) {
+        return element.classList[1]; // Return the second (middle) class
+}
+
 
 
 function HandleSelction() {
