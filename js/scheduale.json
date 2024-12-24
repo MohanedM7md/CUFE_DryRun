@@ -13,6 +13,17 @@
                 "day": "Sunday"
             },
             {
+                "course_code": "MTHS204",
+                "name": "Advanced Probability and Statistics",
+                "type": "Lecture",
+                "location": "[20505]20505-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "09:00:00",
+                "end_time": "10:50:00",
+                "g_nom": "1",
+                "day": "Sunday"
+            },
+            {
                 "course_code": "EECS100",
                 "name": "Laboratory",
                 "type": "Lecture",
@@ -20,17 +31,6 @@
                 "credits": "2",
                 "start_time": "09:00:00",
                 "end_time": "10:50:00",
-                "g_nom": "1",
-                "day": "Sunday"
-            },
-            {
-                "course_code": "MTHS204",
-                "name": "Advanced Probability and Statistics",
-                "type": "Lecture",
-                "location": "[20505]20505-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "10:50:00",
-                "end_time": "09:00:00",
                 "g_nom": "1",
                 "day": "Sunday"
             },
@@ -46,6 +46,17 @@
                 "day": "Sunday"
             },
             {
+                "course_code": "MTHS204",
+                "name": "Advanced Probability and Statistics",
+                "type": "Tutorial",
+                "location": "[20505]20505-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
+                "g_nom": "1",
+                "day": "Sunday"
+            },
+            {
                 "course_code": "EECS100",
                 "name": "Laboratory",
                 "type": "Lecture",
@@ -54,17 +65,6 @@
                 "start_time": "11:00:00",
                 "end_time": "12:50:00",
                 "g_nom": "2",
-                "day": "Sunday"
-            },
-            {
-                "course_code": "MTHS204",
-                "name": "Advanced Probability and Statistics",
-                "type": "Tutorial",
-                "location": "[20505]20505-45-الجيزة الرئيسي",
-                "credits": "3",
-                "start_time": "12:50:00",
-                "end_time": "11:00:00",
-                "g_nom": "1",
                 "day": "Sunday"
             },
             {
@@ -240,14 +240,14 @@
                 "day": "Monday"
             },
             {
-                "course_code": "CMPS303",
-                "name": "Operating Systems",
-                "type": "Lecture",
-                "location": "[18301]18301-45-الجيزة الرئيسي",
-                "credits": "3",
+                "course_code": "PHYS211",
+                "name": "Electromagnetic Fields",
+                "type": "Tutorial",
+                "location": "[20110]20110-45-الجيزة الرئيسي",
+                "credits": "1",
                 "start_time": "14:00:00",
                 "end_time": "15:50:00",
-                "g_nom": "620",
+                "g_nom": "1",
                 "day": "Monday"
             },
             {
@@ -262,14 +262,14 @@
                 "day": "Monday"
             },
             {
-                "course_code": "PHYS211",
-                "name": "Electromagnetic Fields",
-                "type": "Tutorial",
-                "location": "[20110]20110-45-الجيزة الرئيسي",
-                "credits": "1",
-                "start_time": "15:50:00",
-                "end_time": "14:00:00",
-                "g_nom": "1",
+                "course_code": "CMPS303",
+                "name": "Operating Systems",
+                "type": "Lecture",
+                "location": "[18301]18301-45-الجيزة الرئيسي",
+                "credits": "3",
+                "start_time": "14:00:00",
+                "end_time": "15:50:00",
+                "g_nom": "620",
                 "day": "Monday"
             },
             {
@@ -351,8 +351,8 @@
                 "type": "Lecture",
                 "location": "[20505]20505-45-الجيزة الرئيسي",
                 "credits": "1",
-                "start_time": "10:50:00",
-                "end_time": "09:00:00",
+                "start_time": "09:00:00",
+                "end_time": "10:50:00",
                 "g_nom": "2",
                 "day": "Tuesday"
             },
@@ -384,8 +384,8 @@
                 "type": "Lecture",
                 "location": "[20505]20505-45-الجيزة الرئيسي",
                 "credits": "4",
-                "start_time": "12:50:00",
-                "end_time": "11:00:00",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
                 "g_nom": "3",
                 "day": "Tuesday"
             },
@@ -395,8 +395,8 @@
                 "type": "Lecture",
                 "location": "[20104]20104-45-الجيزة الرئيسي",
                 "credits": "1",
-                "start_time": "12:50:00",
-                "end_time": "11:00:00",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
                 "g_nom": "1",
                 "day": "Tuesday"
             },
@@ -717,8 +717,8 @@
                 "type": "Tutorial",
                 "location": "[20505]20505-45-الجيزة الرئيسي",
                 "credits": "1",
-                "start_time": "10:50:00",
-                "end_time": "09:00:00",
+                "start_time": "09:00:00",
+                "end_time": "10:50:00",
                 "g_nom": "2",
                 "day": "Thursday"
             },
@@ -761,8 +761,8 @@
                 "type": "Tutorial",
                 "location": "[20505]20505-45-الجيزة الرئيسي",
                 "credits": "4",
-                "start_time": "12:50:00",
-                "end_time": "11:00:00",
+                "start_time": "11:00:00",
+                "end_time": "12:50:00",
                 "g_nom": "3",
                 "day": "Thursday"
             },
