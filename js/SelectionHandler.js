@@ -24,8 +24,8 @@ function HandleSelction(){
             
             creditsCalaculator(document.querySelectorAll('.Enabled.Lecture'));
             
+            EveryLecHasTut(document.querySelectorAll('.Enabled'));
         })
-        EveryLecHasTut(document.querySelectorAll('.Enabled'));
     })
 }
 
