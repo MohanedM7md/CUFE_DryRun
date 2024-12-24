@@ -1,4 +1,3 @@
-
 window.addEventListener("CoursesAdded", (event) => {
     
     if(event.detail)
@@ -6,30 +5,28 @@ window.addEventListener("CoursesAdded", (event) => {
 });
 
 
-function SelctionColorHandling(){
+function HandleSelction(){
     const coursesBlocks = document.querySelectorAll('.CoursesBlocks');
     let color = true;
     coursesBlocks.forEach(Element =>{
-    Element.addEventListener('click',event => {
-        
-        const OldEnabledBlocks = document.querySelectorAll('.Enabled');
-        const tragetedBlock = event.target;
-        tragetedBlock.classList.toggle ("Enabled");
-        
-        LecturTutorialHandleing();
-        RemoveMultiSameSelction(OldEnabledBlocks,tragetedBlock);
-        creditsCalaculator(document.querySelectorAll('.Enabled.Lecture'));
+
+        Element.addEventListener('click',event => {
+            
+            const OldEnabledBlocks = document.querySelectorAll('.Enabled');
+            const tragetedBlock = event.target;
+            const toggleType = tragetedBlock.classList.toggle ("Enabled");
+            
+            EveryLecHasTut(document.querySelectorAll('.Enabled'));
+            if(toggleType){
+                console.log("Hello")
+                RemoveMultiSameSelction(OldEnabledBlocks,tragetedBlock);
+                CheckSameColSelction(tragetedBlock);
+            }
+
+            creditsCalaculator(document.querySelectorAll('.Enabled.Lecture'));
+
         })
     })
-}
-
-
-function LecturTutorialHandleing(){
-    
-    const EnabledcoursesBlocks = document.querySelectorAll('.Enabled');
-    const coursesBlocks = document.querySelectorAll('.CoursesBlocks');
-    EveryLecHasTut(EnabledcoursesBlocks);
-    
 }
 
 
@@ -115,9 +112,27 @@ function creditsCalaculator(SelectedElements){
         document.getElementById("CreditsNum").innerText=0;
 }
 
-function HandleSelction() {
-    SelctionColorHandling();
-    
+
+function CheckSameColSelction(RecentAddedBlock){
+    const Dayblock = RecentAddedBlock.parentElement.querySelectorAll(".Enabled");
+    console.log(Dayblock);
+    Dayblock.forEach(item=>{
+        console.log('true1')
+        const BlocksCol = getComputedStyle(item).gridColumn.trim().split('/');
+        const RecentAddedCol = getComputedStyle(RecentAddedBlock).gridColumn.trim().split('/');
+        console.log(`Shof: ${BlocksCol} wdi ${RecentAddedCol}`);
+        if(OverlapCheck(BlocksCol,RecentAddedCol) && RecentAddedBlock.id !== item.id){
+            
+            item.classList.remove('Enabled');
+            
+        }
+    })
 }
 
+function OverlapCheck(range1, range2){
+    if(range1[0] == range2[0] && range2[0] == range2[0])
+        return true;//make sure that the two range aren't concide
 
+    return range1[0] < range2[1] && range2[0] < range1[1]; // checks if there is C between range1 and range2 
+
+}

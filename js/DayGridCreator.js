@@ -29,7 +29,7 @@ function isGridCellOccupied(row, column,GridContain) {
 
 
 
-fetch('js/schedual.json')
+fetch('js/scheduale.json')
 .then(Response => Response.json())
 .then(value=>{
     for(key in value){
