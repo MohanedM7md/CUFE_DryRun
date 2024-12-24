@@ -123,36 +123,7 @@
     border: 1px solid brown;
     overflow-y: auto;
     width: 100%;
-    max-width: 480px;
-    height: auto;
-    box-sizing: border-box;
-    margin: 0 auto; /* Center the block */
+    max-width: 280px;
+
 }
 
-.student-summary font {
-    color: #000000;
-    font-size: 14px;
-}
-
-@media (max-width: 600px) {
-    .student-summary {
-        padding: 10px;
-        width: 90%;
-        height: auto;
-    }
-
-    .student-summary font {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 400px) {
-    .student-summary {
-        padding: 8px;
-        width: 100%;
-    }
-
-    .student-summary font {
-        font-size: 11px;
-    }
-}
