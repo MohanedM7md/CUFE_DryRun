@@ -16,16 +16,16 @@ function HandleSelction(){
             const tragetedBlock = event.target;
             const toggleType = tragetedBlock.classList.toggle ("Enabled");
             
-            EveryLecHasTut(document.querySelectorAll('.Enabled'));
             if(toggleType){
                 console.log("Hello")
                 RemoveMultiSameSelction(OldEnabledBlocks,tragetedBlock);
                 CheckSameColSelction(tragetedBlock);
             }
-
+            
             creditsCalaculator(document.querySelectorAll('.Enabled.Lecture'));
-
+            
         })
+        EveryLecHasTut(document.querySelectorAll('.Enabled'));
     })
 }
 
