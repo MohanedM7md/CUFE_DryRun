@@ -2,7 +2,7 @@
 function OverlapCheck(range1, range2){
     if(range1[0] == range2[0] && range2[0] == range2[0])
         return true;//make sure that the two range aren't concide
-
+   // console.log("Hellos")
     return range1[0] < range2[1] && range2[0] < range1[1]; // checks if there is C between range1 and range2 
 
 }

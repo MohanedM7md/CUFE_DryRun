@@ -4,7 +4,7 @@
 
     $sql = "SELECT course_code, name, type, location, credits, start_time, end_time, g_nom,day
     FROM courses 
-    ORDER BY day, start_time";
+    ORDER BY day ,start_time ,name DESC,credits";
 
     $sql2 = "SELECT day,MAX(end_time) as 'end' FROM courses GROUP BY day";
     

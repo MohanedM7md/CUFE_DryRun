@@ -1,8 +1,19 @@
-.tabcontent_zone{
-	display: grid;
-	grid-template-rows: 1fr 1fr;
+.tabcontent_zone {
+	width: 90%;
+	height: auto;
+	display: flex;
+	overflow:unset;
+	
+	flex-wrap: wrap;
+	background-color: #99CCFF;
+	border: #000000 1px solid;
 }
 
+.DaysContain{
+	overflow-y:hidden;
+	height: 190px;
+	border-bottom: #000000 1px solid;
+}
 
 
 .CoursesBlocks {
@@ -87,16 +98,7 @@
 	text-align:center;
 }
 
-.TableContainer {
-	width: 90%;
-	height: 163px;
-	overflow-y:hidden;
-	
-	background-color: #99CCFF;
-	border: #000000 1px solid;
 
-	overflow:auto;
-}
 .ListItem {
 	BORDER-RIGHT: #888888 1px solid;
 	PADDING-RIGHT: 1px;

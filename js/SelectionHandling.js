@@ -17,7 +17,7 @@ function HandleSelction(){
             const toggleType = tragetedBlock.classList.toggle ("Enabled");
             
             if(toggleType){
-                console.log("Hello")
+                
                 RemoveMultiSameSelction(OldEnabledBlocks,tragetedBlock);
                 CheckSameColSelction(tragetedBlock);
             }
@@ -115,12 +115,16 @@ function creditsCalaculator(SelectedElements){
 
 function CheckSameColSelction(RecentAddedBlock){
     const Dayblock = RecentAddedBlock.parentElement.querySelectorAll(".Enabled");
-    console.log(Dayblock);
+    
     Dayblock.forEach(item=>{
-        console.log('true1')
+        
         const BlocksCol = getComputedStyle(item).gridColumn.trim().split('/');
         const RecentAddedCol = getComputedStyle(RecentAddedBlock).gridColumn.trim().split('/');
-        console.log(`Shof: ${BlocksCol} wdi ${RecentAddedCol}`);
+        console.log(`Hl sa7i7: ${RecentAddedBlock.id !== item.id}`)
+        console.log(`wriny el ab3ad kda ${BlocksCol} : ${RecentAddedCol}`)
+        
+        console.log(`tb wda: ${OverlapCheck(BlocksCol,RecentAddedCol)}`) ;
+        debugger
         if(OverlapCheck(BlocksCol,RecentAddedCol) && RecentAddedBlock.id !== item.id){
             
             item.classList.remove('Enabled');
@@ -129,10 +133,3 @@ function CheckSameColSelction(RecentAddedBlock){
     })
 }
 
-function OverlapCheck(range1, range2){
-    if(range1[0] == range2[0] && range2[0] == range2[0])
-        return true;//make sure that the two range aren't concide
-
-    return range1[0] < range2[1] && range2[0] < range1[1]; // checks if there is C between range1 and range2 
-
-}
